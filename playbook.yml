@@ -1,0 +1,8 @@
+
+- name: "ansible-project using Jenkins"
+  hosts: all
+  tasks:
+    - name: "copy file to remote servers"
+      copy:
+        src: ./myFile.txt
+        dest: /tmp/remoteFile.txt
